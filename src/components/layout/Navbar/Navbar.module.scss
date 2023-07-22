@@ -5,9 +5,8 @@
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 99;
+  z-index: 98;
   border-bottom: 1px solid $grey-color;
-  animation: 1s all;
 
   .navigation_container {
     padding: 1rem 1rem;
@@ -25,25 +24,78 @@
     }
     .navigation_container_links {
       a {
-        margin-left: 15px;
+        margin-left: 30px;
         font-size: 1.3rem;
         font-weight: 800;
         color: $white-color;
         text-decoration: none;
+        @media (max-width: 950px) {
+          margin-left: 1rem;
+        }
+      }
+      a:hover {
+        color: red($color: #000000);
       }
 
       .links_button {
         background-color: $red-color;
         padding: 1rem 2rem;
+        &:hover {
+          color: black;
+        }
       }
     }
   }
+  .mobileMenuBtn {
+    display: flex;
+    background-color: transparent;
+    border: none;
+    font-size: 2.5rem;
+    color: $white-color;
+  }
 }
-.navigation1 {
+
+.mobileMenu {
+  z-index: 98;
+  position: absolute;
+  background-color: $grey-color;
+  height: 100vh;
+  width: 0%;
+  opacity: 0;
+  animation: all 1s;
   position: fixed;
   top: 0;
-  width: 100%;
-  z-index: 99;
-  border-bottom: 1px solid $grey-color;
-  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-bottom-right-radius: 25%;
+
+  .navigation_container_logo {
+    font-weight: 900;
+    font-size: 3rem;
+    color: $black-color;
+    position: absolute;
+    top: 1rem;
+    @media (max-width: 480px) {
+      font-size: 2rem;
+    }
+
+    span {
+      color: $red-color;
+    }
+  }
+  a {
+    border-bottom: 1px solid $white-color;
+    width: 100%;
+    margin: 1rem 0;
+    text-decoration: none;
+    color: $black-color;
+    font-size: 2rem;
+    font-weight: 900;
+
+    @media (max-width: 400px) {
+      font-size: 1.3rem;
+    }
+  }
 }
