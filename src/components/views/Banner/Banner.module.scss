@@ -1,0 +1,25 @@
+@import "../../../styles/settings.scss";
+@import "../../../styles/global.scss";
+
+.banner_background {
+  height: 500vh;
+  background-image: url(ship.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: inherit;
+  position: relative;
+  z-index: -1;
+}
+.banner_background::after {
+  content: "";
+  background-color: black;
+  min-height: 100%;
+  width: 100%;
+  opacity: 0.6;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
