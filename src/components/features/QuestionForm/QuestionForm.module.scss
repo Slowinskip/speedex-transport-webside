@@ -1,12 +1,23 @@
 @import "../../../styles/settings.scss";
 @import "../../../styles/global.scss";
 
+.row {
+  display: flex;
+  justify-content: space-between;
+}
 .questionForm {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   margin: 1rem 0;
+  box-shadow: 5px 5px 10px #5a5a5a, -5px -5px 10px #ffffff;
+  padding: 1rem 0;
+  width: 45%;
+  @media (max-width: 800px) {
+    width: 100%;
+  }
+
   h1 {
     font-weight: 900;
   }
@@ -22,10 +33,6 @@
       background-color: #dfe6e9;
       border: none;
       padding: 1rem;
-      //   @media (max-width: 500px) {
-      //     width: 40px;
-      //     height: 80px;
-      //   }
     }
     .questionForm_textArea {
       height: 150px;

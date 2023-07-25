@@ -8,8 +8,8 @@ const QuestionForm = () => {
   return (
     <section>
       <Container>
-        <Row xs={1} md={2}>
-          <Col className={"" + styles.questionForm}>
+        <Row xs={1} md={2} className={styles.row}>
+          <Col className={"col-3 " + styles.questionForm}>
             <h1>Need to Make an Enquiry?</h1>
             <div className={"" + styles.inputContainer}>
               <input
