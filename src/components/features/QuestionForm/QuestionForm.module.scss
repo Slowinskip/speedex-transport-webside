@@ -1,2 +1,83 @@
 @import "../../../styles/settings.scss";
 @import "../../../styles/global.scss";
+
+.questionForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 1rem 0;
+  h1 {
+    font-weight: 900;
+  }
+
+  .inputContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .questionForm_input,
+    .questionForm_textArea {
+      margin: 1rem 0;
+      background-color: #dfe6e9;
+      border: none;
+      padding: 1rem;
+      //   @media (max-width: 500px) {
+      //     width: 40px;
+      //     height: 80px;
+      //   }
+    }
+    .questionForm_textArea {
+      height: 150px;
+    }
+
+    .questionForm_btn {
+      background-color: $red-color;
+      border: none;
+      color: $white-color;
+      padding: 1rem 0;
+    }
+  }
+}
+
+.questionInformation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1rem 0;
+
+  h6 {
+    font-weight: 900;
+  }
+  h1 {
+    font-weight: 900;
+  }
+  .questionInformationText {
+    color: $grey-color;
+    margin: 1rem 0;
+  }
+  .questionInformation_date {
+    div {
+      display: flex;
+      margin: 1rem 0;
+      align-items: center;
+
+      .questionInformation_icon {
+        font-size: 1.5rem;
+        color: $white-color;
+      }
+      span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        height: 2.5rem;
+        width: 2.5rem;
+        background-color: $red-color;
+      }
+      p {
+        margin: 0 1rem;
+      }
+    }
+  }
+}
