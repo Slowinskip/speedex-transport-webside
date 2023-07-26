@@ -1,2 +1,44 @@
 @import "../../../styles/settings.scss";
 @import "../../../styles/global.scss";
+
+.widgetBackground {
+  background-color: $grey-color;
+  //   height: 50vh;
+  margin: 4rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .widgetBox {
+      transform: translate(0, -50px);
+
+      .card {
+        display: flex;
+        min-height: 30rem;
+        // justify-content: center;
+        justify-content: start;
+        margin: 1rem 0;
+        @media (max-width: 450px) {
+          min-height: 20rem;
+        }
+
+        .card_Title {
+          display: flex;
+          align-items: center;
+          font-weight: 900;
+          padding: 1rem;
+          min-height: 5rem;
+        }
+        .card_Text {
+          padding: 1rem;
+          color: $grey-color;
+        }
+      }
+    }
+  }
+}
