@@ -9,7 +9,7 @@ const QuestionForm = () => {
     <section>
       <Container>
         <Row xs={1} md={2} className={styles.row}>
-          <Col className={"col-3 " + styles.questionForm}>
+          <Col className={"" + styles.questionForm}>
             <h1>Need to Make an Enquiry?</h1>
             <div className={"" + styles.inputContainer}>
               <input
