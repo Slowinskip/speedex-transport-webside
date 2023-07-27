@@ -10,8 +10,6 @@ const Navbar = () => {
   const [mobileMenu, setmobileMenu] = useState("0%");
   const [mobileMenuOpacity, setmobileMenuOpacity] = useState(0);
 
-  console.log(mobileMenu);
-
   const showMenu = function () {
     if (mobileMenu === "0%") {
       setmobileMenu("50%");
@@ -34,7 +32,6 @@ const Navbar = () => {
       setnavBackground("");
       setTextColor("white");
     }
-    console.log(window.scrollY);
   });
   return (
     <>
