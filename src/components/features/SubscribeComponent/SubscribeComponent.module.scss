@@ -1,2 +1,57 @@
 @import "../../../styles/settings.scss";
 @import "../../../styles/global.scss";
+
+.subBackground {
+  background-color: $red-color;
+  padding: 2rem 0;
+  .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+
+    .subText,
+    .subInput {
+    }
+
+    .subText {
+      color: $white-color;
+      font-weight: 900;
+      @media (max-width: 992px) {
+        text-align: center;
+      }
+    }
+
+    .subInput {
+      display: flex;
+      flex-direction: row;
+      justify-content: end;
+      @media (max-width: 992px) {
+        justify-content: center;
+        // flex-direction: column;
+      }
+      @media (max-width: 400px) {
+        // justify-content: center;
+        flex-direction: column;
+
+        .input {
+          height: 40px;
+          width: 100%;
+          margin: 1rem 0;
+        }
+      }
+
+      .subBtn {
+        background: $black-color;
+        color: $white-color;
+        padding: 15px 30px;
+        border: none;
+        transition: 0.5s all;
+        &:hover {
+          background-color: $grey-color;
+          color: $red-color-strong;
+        }
+      }
+    }
+  }
+}
