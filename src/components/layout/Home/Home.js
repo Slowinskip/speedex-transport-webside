@@ -11,13 +11,21 @@ const Home = () => {
   return (
     <div>
       <Banner
-        btn1={<button className={styles.btn1}>What Sets us Appart?</button>}
-        btn2={<button className={styles.btn2}>List of Out Services</button>}
+        btn1={
+          <a href="#widget" className={styles.btn1}>
+            What Sets us Appart?
+          </a>
+        }
+        btn2={
+          <a href="/services" className={styles.btn2}>
+            List of Out Services
+          </a>
+        }
         title="Taking Logistics to Another Level"
         description=" A new player in the transport industry. Trust Speedex and entrust us
         with your shipment"
       />
-      <Service />
+      <Service title="We provide full assistance in forwarding and storage" />
       <QuestionForm />
       <Widget />
       <Accomplishments />

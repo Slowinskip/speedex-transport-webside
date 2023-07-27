@@ -3,7 +3,7 @@ import { Card, Col, Container, Row } from "react-bootstrap";
 import styles from "./Widget.module.scss";
 const Widget = () => {
   return (
-    <section>
+    <section id="widget">
       <div className={styles.widgetBackground}>
         <Container>
           <Row xs={1} md={2} lg={3} className={styles.row}>

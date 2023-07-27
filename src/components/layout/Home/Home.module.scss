@@ -4,8 +4,14 @@
 .btn2 {
   border: 2px solid $red-color;
   background-color: transparent;
+  text-decoration: none;
+  color: $red-color;
+  padding: 15px 20px;
 }
 .btn1 {
   border: none;
   background-color: $red-color;
+  text-decoration: none;
+  color: $white-color;
+  padding: 15px 20px;
 }

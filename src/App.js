@@ -7,6 +7,7 @@ import Contact from "./components/features/Contact/Contact";
 import Company from "./components/views/Company/Company";
 import Service from "./components/views/Service/Service";
 import ServicesPage from "./components/views/ServicesPage/ServicesPage";
+import { Quote } from "./components/views/Quote/Quote";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/company" element={<Company />} />
         <Route path="/services" element={<ServicesPage />} />
+        <Route path="/quote" element={<Quote />} />
       </Routes>
 
       <Footer />
