@@ -57,7 +57,7 @@ const Navbar = () => {
               <a style={{ color: `${textColor}` }} href="">
                 Services
               </a>
-              <a style={{ color: `${textColor}` }} href="">
+              <a style={{ color: `${textColor}` }} href="/company">
                 Company
               </a>
               <a style={{ color: `${textColor}` }} href="/contact">
@@ -87,7 +87,7 @@ const Navbar = () => {
         </h1>
         <a href="/">Home</a>
         <a href="">Services</a>
-        <a href="">Company</a>
+        <a href="/company">Company</a>
         <a href="/contact">Contact</a>
         <a className={styles.links_button} href="">
           Get a Quote
