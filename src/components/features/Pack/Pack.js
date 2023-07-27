@@ -6,33 +6,36 @@ const Pack = () => {
     <section className={styles.sectionPack}>
       <div className={styles.packBackground}></div>
       <Container>
-        <Row xs={1} md={2} lg={3} className={styles.row}>
-          <Col className={styles.packBox}>
-            <h3>Starter Pack</h3>
+        <Row className={styles.row}>
+          <Col xs={10} md={5} lg={4} className={styles.packBox}>
+            <h4>Starter Pack</h4>
             <p>$100</p>
-            <p>Monthly</p>
+            <p className={styles.montlyP}>Monthly</p>
             <p>1 warehouse</p>
             <p>Custom business rules</p>
             <p>Real-time rate shopping</p>
             <p>100 freight shipments / month</p>
+            <button className={styles.packBtn}>Buy Plan</button>
           </Col>{" "}
-          <Col className={styles.packBox}>
-            <h3>Regular Pack</h3>
+          <Col xs={10} md={5} lg={4} className={styles.packBox}>
+            <h4>Regular Pack</h4>
             <p>$200</p>
-            <p>Monthly</p>
+            <p className={styles.montlyP}>Monthly</p>
             <p>Multiple warehouses</p>
             <p>Custom business rules</p>
             <p>Assisted On-boarding</p>
-            <p>250 freight shipments / month</p>
+            <p>250 freight shipments / month</p>{" "}
+            <button className={styles.packBtn}>Buy Plan</button>
           </Col>
-          <Col className={styles.packBox}>
-            <h3>AdvancedPack</h3>
+          <Col xs={10} md={5} lg={4} className={styles.packBox}>
+            <h4>AdvancedPack</h4>
             <p>$300</p>
             <p>Monthly</p>
             <p>Multiple warehouses</p>
             <p>Carrier invoice audit</p>
             <p>Discounted marketplace rates</p>
-            <p>Unlimited freight shipments</p>
+            <p>Unlimited freight shipments</p>{" "}
+            <button className={styles.packBtn}>Buy Plan</button>
           </Col>
         </Row>
       </Container>
