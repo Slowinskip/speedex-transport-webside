@@ -9,8 +9,8 @@ const Service = () => {
           <p>SERVICE</p>
           <h1>We provide full assistance in forwarding and storage</h1>
         </div>
-        <Row xs={1} md={2} lg={3} className={styles.row_content}>
-          <Col className={styles.srvice_box}>
+        <Row className={styles.row_content}>
+          <Col xs={10} md={5} lg={3} className={styles.srvice_box}>
             <img alt="img" src="./images/Plane.png"></img>
             <h3>Air Freight</h3>
             <p>
@@ -18,7 +18,7 @@ const Service = () => {
               as soon as possible
             </p>
           </Col>
-          <Col className={styles.srvice_box}>
+          <Col xs={10} md={5} lg={3} className={styles.srvice_box}>
             <img alt="img" src="./images/Ship.png"></img>
             <h3>Ocean Freight</h3>
             <p>
@@ -26,7 +26,7 @@ const Service = () => {
               car
             </p>
           </Col>
-          <Col className={styles.srvice_box}>
+          <Col xs={10} md={5} lg={3} className={styles.srvice_box}>
             <img alt="img" src="./images/Truck.png"></img>
             <h3>Land Express</h3>
             <p>

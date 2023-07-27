@@ -29,8 +29,9 @@
 
   .row_content {
     width: 100%;
-    // display: flex;
+    display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 
     .srvice_box {
       margin-top: 10rem;
@@ -41,7 +42,7 @@
       justify-content: space-around;
       position: relative;
       height: 300px;
-      max-width: 350px;
+      // max-width: 350px;
       padding-bottom: 2rem;
       transition: 0.5s all;
       background-color: $white-color;
@@ -58,7 +59,16 @@
 
         width: 300px;
         height: 200px;
+        @media (min-width: 768px) and (max-width: 1300px) {
+          width: 200px;
+          height: 150px;
+        }
+        @media (min-width: 0px) and (max-width: 400px) {
+          width: 200px;
+          height: 150px;
+        }
       }
+
       h3 {
         font-weight: 900;
       }
