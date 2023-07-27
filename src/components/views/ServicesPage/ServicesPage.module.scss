@@ -1,0 +1,48 @@
+@import "../../../styles/settings.scss";
+@import "../../../styles/global.scss";
+
+.servicesSection {
+  .sectionRow {
+    margin: 3rem 0;
+    .titleDiv {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      .sestionSmallTitle {
+        font-weight: 900;
+        font-size: 1rem;
+        background-color: $red-color;
+        color: $white-color;
+        //   width: 10%;
+        padding: 5px 20px;
+        border-radius: 50px 0px;
+      }
+      .sestionTitle {
+        font-weight: 900;
+      }
+    }
+    .servicesBox {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin: 2rem 0;
+      img {
+        object-fit: cover;
+      }
+      .serviceTextContent {
+        h2 {
+          font-weight: 900;
+          margin-top: 1rem;
+        }
+        p {
+          margin: 1rem 0;
+          font-size: 1.2rem;
+          color: $grey-color;
+        }
+      }
+    }
+  }
+}

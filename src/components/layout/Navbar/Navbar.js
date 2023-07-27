@@ -54,7 +54,7 @@ const Navbar = () => {
               <a style={{ color: `${textColor}` }} href="/">
                 Home
               </a>
-              <a style={{ color: `${textColor}` }} href="">
+              <a style={{ color: `${textColor}` }} href="/services">
                 Services
               </a>
               <a style={{ color: `${textColor}` }} href="/company">
@@ -86,7 +86,7 @@ const Navbar = () => {
           Sp<span>ee</span>dex
         </h1>
         <a href="/">Home</a>
-        <a href="">Services</a>
+        <a href="/services">Services</a>
         <a href="/company">Company</a>
         <a href="/contact">Contact</a>
         <a className={styles.links_button} href="">

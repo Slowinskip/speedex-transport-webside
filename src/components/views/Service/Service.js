@@ -11,7 +11,7 @@ const Service = () => {
         </div>
         <Row className={styles.row_content}>
           <Col xs={10} md={5} lg={3} className={styles.srvice_box}>
-            <img alt="img" src="./images/Plane.png"></img>
+            <img alt="img" src="./images/plane1.png"></img>
             <h3>Air Freight</h3>
             <p>
               By ordering air transport, you know that the shipment will arrive
@@ -19,7 +19,7 @@ const Service = () => {
             </p>
           </Col>
           <Col xs={10} md={5} lg={3} className={styles.srvice_box}>
-            <img alt="img" src="./images/Ship.png"></img>
+            <img alt="img" src="./images/ship1.png"></img>
             <h3>Ocean Freight</h3>
             <p>
               Water transport is recommended for large-size shipments, such as a
@@ -27,7 +27,7 @@ const Service = () => {
             </p>
           </Col>
           <Col xs={10} md={5} lg={3} className={styles.srvice_box}>
-            <img alt="img" src="./images/Truck.png"></img>
+            <img alt="img" src="./images/bus.png"></img>
             <h3>Land Express</h3>
             <p>
               Ground transport will easily transport your package between nearby
