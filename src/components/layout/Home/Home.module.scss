@@ -1,2 +1,11 @@
 @import "../../../styles/settings.scss";
 @import "../../../styles/global.scss";
+
+.btn2 {
+  border: 2px solid $red-color;
+  background-color: transparent;
+}
+.btn1 {
+  border: none;
+  background-color: $red-color;
+}

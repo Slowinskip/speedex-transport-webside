@@ -1,19 +1,16 @@
 import React from "react";
 import styles from "./Banner.module.scss";
-const Banner = () => {
+const Banner = ({ btn2, btn1, title, description }) => {
   return (
     <>
       <div className={styles.banner_background}></div>
       <div className={styles.baner_content}>
         <img src="./images/logo_white.png" alt="img"></img>
-        <h1>Taking Logistics to Another Level</h1>
-        <p>
-          A new player in the transport industry. Trust Speedex and entrust us
-          with your shipment
-        </p>
+        <h1>{title}</h1>
+        <p>{description}</p>
         <div className={styles.content_btn}>
-          <button className={styles.btn1}>What Sets us Appart?</button>
-          <button className={styles.btn2}>List of Out Services</button>
+          {btn1}
+          {btn2}
         </div>
       </div>
     </>

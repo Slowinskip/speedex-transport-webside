@@ -1,10 +1,11 @@
-import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import React, { useState } from "react";
+import { Alert, Col, Container, Row } from "react-bootstrap";
 import styles from "./QuestionForm.module.scss";
 import { BiMap } from "react-icons/bi";
 import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 
 const QuestionForm = () => {
+  const [alert, setAlert] = useState(false);
   return (
     <section>
       <Container>
@@ -41,7 +42,10 @@ const QuestionForm = () => {
                 className={"col-11 " + styles.questionForm_textArea}
                 placeholder="Your Message*"
               />
-              <button className={"col-11 " + styles.questionForm_btn}>
+              <button
+                onClick={() => setAlert(!alert)}
+                className={"col-11 " + styles.questionForm_btn}
+              >
                 Submit Message
               </button>
             </div>
@@ -81,6 +85,14 @@ const QuestionForm = () => {
               </div>
             </div>
           </Col>
+          {alert ? (
+            <Alert variant="danger" className="mt-3">
+              <Alert.Heading>Something is wrong!</Alert.Heading>
+              <p>Unfortunately, this functionality does not work yet </p>
+            </Alert>
+          ) : (
+            ""
+          )}
         </Row>
       </Container>
     </section>

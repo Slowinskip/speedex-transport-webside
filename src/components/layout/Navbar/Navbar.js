@@ -51,7 +51,7 @@ const Navbar = () => {
           </h1>
           {width > 800 ? (
             <div className={styles.navigation_container_links}>
-              <a style={{ color: `${textColor}` }} href="">
+              <a style={{ color: `${textColor}` }} href="/">
                 Home
               </a>
               <a style={{ color: `${textColor}` }} href="">
@@ -60,7 +60,7 @@ const Navbar = () => {
               <a style={{ color: `${textColor}` }} href="">
                 Company
               </a>
-              <a style={{ color: `${textColor}` }} href="">
+              <a style={{ color: `${textColor}` }} href="/contact">
                 Contact
               </a>
               <a className={styles.links_button} href="">
@@ -85,10 +85,10 @@ const Navbar = () => {
         <h1 className={styles.navigation_container_logo}>
           Sp<span>ee</span>dex
         </h1>
-        <a href="">Home</a>
+        <a href="/">Home</a>
         <a href="">Services</a>
         <a href="">Company</a>
-        <a href="">Contact</a>
+        <a href="/contact">Contact</a>
         <a className={styles.links_button} href="">
           Get a Quote
         </a>
