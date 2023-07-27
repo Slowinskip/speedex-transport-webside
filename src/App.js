@@ -7,7 +7,10 @@ import Contact from "./components/features/Contact/Contact";
 import Company from "./components/views/Company/Company";
 import Service from "./components/views/Service/Service";
 import ServicesPage from "./components/views/ServicesPage/ServicesPage";
-import { Quote } from "./components/views/Quote/Quote";
+import { QuoteChoising } from "./components/views/QuoteChoising/QuoteChoising";
+import QuoteAir from "./components/views/QuoteAir/QuoteAir";
+import QuoteOcean from "./components/views/QuoteOcean/QuoteOcean";
+import QuoteLand from "./components/views/QuoteLand/QuoteLand";
 
 function App() {
   return (
@@ -18,7 +21,10 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/company" element={<Company />} />
         <Route path="/services" element={<ServicesPage />} />
-        <Route path="/quote" element={<Quote />} />
+        <Route path="/quote" element={<QuoteChoising />} />
+        <Route path="/quoteAir" element={<QuoteAir />} />
+        <Route path="/quoteOcean" element={<QuoteOcean />} />
+        <Route path="/quoteLand" element={<QuoteLand />} />
       </Routes>
 
       <Footer />

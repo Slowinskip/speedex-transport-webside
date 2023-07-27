@@ -11,7 +11,7 @@ const Service = ({ title }) => {
         </div>
         <Row className={styles.row_content}>
           <Col xs={10} md={5} lg={3} className={styles.srvice_box}>
-            <a href="/">
+            <a href="/quoteAir">
               "<img alt="img" src="./images/plane1.png"></img>
               <h3>Air Freight</h3>
               <p>
@@ -21,7 +21,7 @@ const Service = ({ title }) => {
             </a>
           </Col>
           <Col xs={10} md={5} lg={3} className={styles.srvice_box}>
-            <a href="/">
+            <a href="/quoteOcean">
               <img alt="img" src="./images/ship1.png"></img>
               <h3>Ocean Freight</h3>
               <p>
@@ -31,7 +31,7 @@ const Service = ({ title }) => {
             </a>
           </Col>
           <Col xs={10} md={5} lg={3} className={styles.srvice_box}>
-            <a href="/">
+            <a href="/quoteLand">
               <img alt="img" src="./images/bus.png"></img>
               <h3>Land Express</h3>
               <p>

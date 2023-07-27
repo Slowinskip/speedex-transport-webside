@@ -64,7 +64,7 @@ const ServicesPage = () => {
           </Row>
           <Row className={styles.sectionRow}>
             <div className={styles.titleDiv}>
-              <p className={styles.sestionSmallTitle}>Warehousing</p>
+              <p className={styles.sestionSmallTitle}>Land Freight</p>
               <h1 className={styles.sestionTitle}>
                 Huge space, Huge possibilities
               </h1>
