@@ -8,8 +8,8 @@ const Footer = () => {
   return (
     <div className={styles.footerBackground}>
       <Container>
-        <Row>
-          <Col xs={6} lg={4} className={styles.logo_box}>
+        <Row className={styles.row}>
+          <Col xs={12} lg={4} className={styles.logo_box}>
             <img src="./images/logo_white.png" alt="img"></img>
             <p>53-027 Wrocław, Januszowicka 99/99 Street</p>
             <p>speedexoffice@speedex.com</p>
