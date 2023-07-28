@@ -33,15 +33,12 @@
           margin-left: 1rem;
         }
       }
-      a:hover {
-        color: red($color: #000000);
-      }
 
       .links_button {
         background-color: $red-color;
         padding: 1rem 2rem;
         &:hover {
-          color: black;
+          color: $grey-color;
         }
       }
     }
@@ -93,7 +90,11 @@
     color: $black-color;
     font-size: 2rem;
     font-weight: 900;
-
+    padding-left: 1rem;
+    transition: 0.5s all;
+    &:hover {
+      color: $red-color;
+    }
     @media (max-width: 400px) {
       font-size: 1.3rem;
     }

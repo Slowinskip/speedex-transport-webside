@@ -59,6 +59,10 @@
   }
 
   .content_btn {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     a {
       color: $white-color;
       padding: 20px 25px;
